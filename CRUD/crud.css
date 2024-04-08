@@ -36,7 +36,7 @@ input:focus{
     width: 20%;
 }
 #total{
-    background: rgb(233, 34, 34);
+    background: #e92222;
     border-radius: 4px;
     padding: 5px 2px;
 }
@@ -48,7 +48,7 @@ button{
     height: 30px;
     border: none;
     cursor: pointer;
-    background: rgb(5, 156, 110);
+    background: #059c6e;
     border-radius: 20px;
     transition: 0.5s;
 }
@@ -62,4 +62,15 @@ button:hover{
 }
 .btnSearch button{
     width: 45%;
+}
+table{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+table tr{
+    text-transform: uppercase;
+}
+th, td{
+    padding: 5px;
 }

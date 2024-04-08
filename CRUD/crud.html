@@ -14,11 +14,11 @@
         <div class="inputs">
             <input placeholder= "Title" type = "text" id = "title">
             <div class="price">
-                <input type="number" id = "price" placeholder="price">
-                <input type="number" id = "taxes" placeholder="taxes">
-                <input type="number" id = "ads" placeholder="ads">
-                <input type="number" id = "discount" placeholder="discount">
-                <small id="total">5555</small>
+                <input onkeyup="getTotalPrice()" type="number" id = "price" placeholder="price">
+                <input onkeyup="getTotalPrice()" type="number" id = "taxes" placeholder="taxes">
+                <input onkeyup="getTotalPrice()" type="number" id = "ads" placeholder="ads">
+                <input onkeyup="getTotalPrice()" type="number" id = "discount" placeholder="discount">
+                <small onkeyup="getTotalPrice()" id="total">5555</small>
             </div>
             <input type="number" id="count" placeholder="count">
             <input type="text" id="category" placeholder="category">
@@ -33,10 +33,72 @@
                     <button id="searchByCategory">Search By Category</button>
                 </div>
             </div>
+
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                    <th>Taxes</th>
+                    <th>Ads</th>
+                    <th>Discount</th>
+                    <th>Category</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </tr>
+                
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Product 1</td>
+                        <td>1000</td>
+                        <td>100</td>
+                        <td>50</td>
+                        <td>10</td>
+                        <td>1000</td>
+                        <td>Category 1</td>
+                        <td><button id="update">Update</button></td>
+                        <td><button id="delete">Delete</button></td>
+                    </tr>
+                </tbody>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Product 1</td>
+                        <td>1000</td>
+                        <td>100</td>
+                        <td>50</td>
+                        <td>10</td>
+                        <td>1000</td>
+                        <td>Category 1</td>
+                        <td><button id="update">Update</button></td>
+                        <td><button id="delete">Delete</button></td>
+                    </tr>
+                </tbody>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Product 1</td>
+                        <td>1000</td>
+                        <td>100</td>
+                        <td>50</td>
+                        <td>10</td>
+                        <td>1000</td>
+                        <td>Category 1</td>
+                        <td><button id="update">Update</button></td>
+                        <td><button id="delete">Delete</button></td>
+                    </tr>
+                </tbody>
+
+            </table>
         </div>
 
         
     </div>
-    <div class="main.js"></div>
+    <script src="main.js"></script>
 </body>
 </html>
